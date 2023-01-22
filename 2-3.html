@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计算平均分并求出学生等级</title>
+</head>
+<body>
+    <script>
+        var chi = Number(prompt('请输入语文成绩'));
+        var math = Number(prompt('请输入数学成绩'));
+        var eng = Number(prompt('请输入英语成绩'));
+        var chm = Number(prompt('请输入化学成绩'));
+        var his =Number(prompt('请输入历史成绩'));
+        var sum = 0;
+        var aver = 0;
+        sum = chi + math + eng + chm + his;
+        aver = sum/5;
+        switch (true) {
+            case aver >= 90:
+                alert('优秀');
+                break;
+            case aver < 90 && aver >= 80:
+                alert('良好');
+                break;
+            case aver < 80 && aver >= 70:
+                alert('一般');
+                break;
+            case aver < 70 && aver >= 60:
+                alert('较差');
+                break;
+            case aver < 60:
+                alert('很差');
+                break;
+        }
+    </script>
+</body>
+</html>
